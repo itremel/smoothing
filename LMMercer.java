@@ -1,4 +1,3 @@
-package SmoothingSearch;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -48,11 +47,6 @@ public class LMMercer {
 				return "custom jelinekmercer";
 			}
 		};
-//		sync3-20120203040101_756
-//		sync3-20120405040101_951
-//		lk-20120110040101_1415
-//		lk-20111104040101_782
-//		lk-20111105040101_1312
 		
 		IndexSearcher is = new IndexSearcher(rdr);
 //		Similarity sim = new LMJelinekMercerSimilarity(lambda);
