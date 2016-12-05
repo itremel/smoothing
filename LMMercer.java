@@ -101,8 +101,8 @@ public class LMMercer {
 		String indexdir = "C:\\workspace_java1_8\\TIR_Index_JelinekMercer";
 		
 		try{
-			LMMercer.search(indexdir, "donald trump@2011-2013", 5, 0.3f);
-//			LMMercer.search(indexdir, query, topK, parameter);
+//			LMMercer.search(indexdir, "donald trump@2011-2013", 5, 0.3f);
+			LMMercer.search(indexdir, query, topK, parameter);
 		} catch (Exception e){
 			e.printStackTrace();
 			
