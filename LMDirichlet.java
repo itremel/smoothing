@@ -66,13 +66,10 @@ public class LMDirichlet {
 			
 			hits = is.search(bq.build(), topK);
 //			System.out.println(is.count(bq.build()));
-			System.out.println(is.explain(bq.build(), 
-//					hits.scoreDocs[0].doc
-					37440
-					));
+//			System.out.println(is.explain(bq.build(), hits.scoreDocs[0].doc));
 		}else{
 			Query query = parser.parse(q);
-			hits = is.search(query,10);
+			hits = is.search(query,topK);
 		}
 		for(ScoreDoc scoreDoc : hits.scoreDocs) {
 			Document doc = is.doc(scoreDoc.doc);
